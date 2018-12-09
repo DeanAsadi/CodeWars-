@@ -256,3 +256,24 @@ countVowels("this site is for loseres LOL");
 //----------------------------------
 
 //-------------------------------------------------------------------------------------------------------------------------
+
+// Write a function to square every digit of an integer.
+
+// For example:
+// squareEveryNum(9119) ==> 811181
+// squareEveryNum(4232) ==> 16494
+
+// Note: The function should accept an integer and return an integer
+
+function sequareEveryDigit(num) {
+  var splitNum = num.toString().split("");
+  var squaredNum = [];
+
+  for (let i = 0; i < splitNum.length; i++) {
+    squaredNum.push(Math.pow(Number.parseInt(splitNum[i], 10), 2));
+  }
+  return Number.parseInt(squaredNum.join(""));
+}
+sequareEveryDigit(9119);
+
+//-------------------------------------------------------------------------------------------------------------------------
