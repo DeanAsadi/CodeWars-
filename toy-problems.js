@@ -189,5 +189,24 @@ function printer_error(str) {
   }
   console.log(count + "/" + splitStr.length);
 }
-
 printer_error("aaaxbbbbyyhwawiwjjjwwm");
+
+//-------------------------------------------------------------------------------------------------------------------------
+// write a function that translates english to pig-latin
+// 'truck' would be 'rucktay'
+// 'igloo' would be 'iglooway'
+
+function translateEng(str) {
+  let splitStr = str.split("");
+  let vowels = ["a", "i", "o", "a", "u"];
+
+  if (!vowels.includes(splitStr[0])) {
+    splitStr.push(splitStr[0], "a", "y");
+    splitStr.splice(0, 1);
+  } else {
+    splitStr.push("a", "y");
+  }
+  return splitStr.join("");
+}
+
+translateEng("truck");
