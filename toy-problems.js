@@ -226,3 +226,23 @@ function songDecoder(str) {
 songDecoder("WUBWUBIWUBAMWUBWUBX");
 
 //-------------------------------------------------------------------------------------------------------------------------
+// Write a function that, given a string, returns the number of vowels in that string.
+
+// We will consider that a, e, i, o and u are vowels for the sake of this problem.
+
+function countVowels(str) {
+  var splitStr = str.toLowerCase().split("");
+  var count = 0;
+  var vowels = ["a", "e", "i", "o", "u"];
+
+  for (let i = 0; i < splitStr.length; i++) {
+    if (vowels.includes(splitStr[i])) {
+      count++;
+    }
+  }
+  console.log(count);
+  return count;
+}
+countVowels("this site is for loseres LOL");
+
+//-------------------------------------------------------------------------------------------------------------------------
