@@ -245,4 +245,14 @@ function countVowels(str) {
 }
 countVowels("this site is for loseres LOL");
 
+//----------------------------------
+//Sloved using match()
+function countVowels(str) {
+  let value = str.match(/[aeiou]/gi);
+
+  return value === null ? "null" : value;
+}
+countVowels("this site is for loseres LOL");
+//----------------------------------
+
 //-------------------------------------------------------------------------------------------------------------------------
