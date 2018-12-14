@@ -317,3 +317,26 @@ function validParenthesesTest(parant) {
 }
 
 //-------------------------------------------------------------------------------------------------------------------------------------------------
+
+var arr = [
+  [
+    { name: "Dean-1", voice: "Beautiful-1", smilyFace: true },
+    { name: "Dean-2", voice: "Beautiful-2", smilyFace: true },
+    { name: "Dean-3", voice: "Beautiful-3", smilyFace: true }
+  ],
+   [
+    { name: "Dean-10", voice: "Beautiful-10", smilyFace: true },
+    { name: "Dean-20", voice: "Beautiful-20", smilyFace: true },
+    { name: "Dean-30", voice: "Beautiful-30", smilyFace: true }
+  ]
+]
+
+
+for( let i = 0; i < arr.length; i ++ ) {
+  // console.log(arr[i])
+    for( let j = 0; j < arr[i].length; j++ ) {
+      // console.log( arr[i][j]  )
+        for ( keys in arr[i][j] ) {
+          console.log( keys, arr[i][j][keys] )
+        }
+    }
