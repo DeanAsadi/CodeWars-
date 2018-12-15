@@ -366,3 +366,28 @@ for( let i = 0; i < arr.length; i ++ ) {
     }
 
 //-------------------------------------------------------------------------------------------------------------------------------------------------
+
+var obj = {
+  char: [
+    { name: "Dean-1", voice: "Beautiful-1", smilyFace: true },
+    { name: "Dean-2", voice: "Beautiful-2", smilyFace: true },
+    { name: "Dean-3", voice: "Beautiful-3", smilyFace: true }
+  ],
+  char2: [
+    { name: "Dean-10", voice: "Beautiful-10", smilyFace: true },
+    { name: "Dean-20", voice: "Beautiful-20", smilyFace: true },
+    { name: "Dean-30", voice: "Beautiful-30", smilyFace: true }
+  ]
+}
+
+for ( let keys in obj ) {
+  // console.log(obj[keys])
+    for ( let i = 0; i < obj[keys].length; i++ ) {
+      // console.log( obj[keys][i] )
+      for( let finalKey in obj[keys][i] ) {
+        // console.log(finalKey, obj[keys][i][finalKey])
+      }
+    }
+}
+
+//-------------------------------------------------------------------------------------------------------------------------------------------------
