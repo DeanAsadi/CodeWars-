@@ -471,7 +471,6 @@ const posts = [ {
 // Display all post date form that user
 
 var newUserArr = [];
-var howManyPosts = []
 
 function displayUserPosts( arr , user ) {
 for ( let i = 0; i < arr.length; i++ ) {
