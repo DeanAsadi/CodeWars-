@@ -521,3 +521,20 @@ function validParentheses(str){
  }
  validParentheses("))(())((")
  
+ //Sol #2
+function validParentheses(str) {
+  var arr = str.split("");
+  var countOne = 0;
+  var countTwo = 0;
+
+  for ( let i = 0; i < arr.length; i++ ) {
+      if( arr[i] == ")" ) {
+        countOne++
+      } else{
+        countTwo++
+      }
+  }
+  return countOne === countTwo
+
+}
+validParentheses( "(())((()())())" )
