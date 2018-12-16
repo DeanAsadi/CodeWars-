@@ -576,3 +576,38 @@ function findUniq(arr) {
   }
 }
 findUniq([ 1, 1, 1, 2, 1, 1 ])
+//-------------------------------------------------------------------------------------------------------------------------------------------------
+
+//given a multidimentional array, write a function that takes in an array and returns the sume of the averages
+//of those array
+let arr= [[1,2,3,4],[1,2,3]]
+var count = 0;
+
+for ( let i = 0; i < arr.length; i++ ) {
+  // console.log(arr[i])
+    for(let j = 0; j < arr[i].length; j++) {
+      for(let j = 0; j < arr[i].length; j ++) {
+      }
+       count += arr[i][j]
+    }  
+}
+//-------------------------------------------------------------------------------------------------------------------------------------------------
+
+// //given a multidimentional array, write a function that takes in an array and returns the sume of the averages
+// //of those array
+
+function average(arr) {
+  let sum = 0;
+  let total = 0;
+  for (let i = 0; i < arr.length; i++) {
+    for (let j = 0; j < arr[i].length; j++) {
+      sum = sum + arr[i][j];
+    }
+    total = sum / arr[i].length + total;
+    sum = 0;
+  }
+  return total;
+}
+average(arr)
+
+let arr= [[1,2,3,4],[1,2,3]]
