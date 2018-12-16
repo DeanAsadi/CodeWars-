@@ -611,3 +611,16 @@ function average(arr) {
 }
 average(arr)
 
+//write a function that takes an array and returns the element in the array that appears an odd number of times
+
+var odd = []
+
+function findOdd(arr) {
+  for(let i = 0; i < arr.length; i ++) {
+    if(arr[i] % 2 !== 0 ) {
+      odd.push(arr[i])
+    }
+  }
+  return odd
+}
+findOdd([1,2,3,4,5]
