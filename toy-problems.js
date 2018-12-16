@@ -486,3 +486,20 @@ return{
 }
 
 displayUserPosts( posts, 'slogesdale9' )
+
+// Another solution using filter()
+function findUserPosts( arr, user ) {
+  const filterUserPosts = arr.filter((elm) => elm.username === user )
+  const dateFilter = arr.filter((elm) => elm.username === user).sort((a, b) => {
+    return Date.parse( a.date ) - Date.parse(b.date)
+  })
+  return{
+    numberOfPosts: filterUserPosts.length,
+    dateFilter: dateFilter,
+    posts: filterUserPosts
+  }
+}
+
+findUserPosts(posts, 'slogesdale9')
+
+//-------------------------------------------------------------------------------------------------------------------------------------------------
