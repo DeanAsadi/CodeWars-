@@ -659,13 +659,3 @@ sortArray([ 0,1,4,6,7,9,7,10 ])
 
 
 //-------------------------------------------------------------------------------------------------------------------------------------------------
-//find the largeset and smallest numbers a given array
-function findMinManNumber(arr) {
-  var maxNum = Math.max(...arr)
-  var minNum = Math.min(...arr)
-
-  return ` Min number ${maxNum} and Max number is ${minNum} `
-}
-findMinManNumber(arr1)
-var arr1 = [1,3,4,5,6,7,8,9,10]
-
