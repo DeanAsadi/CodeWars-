@@ -669,3 +669,23 @@ function findMinManNumber(arr) {
 findMinManNumber(arr1)
 var arr1 = [1,3,4,5,6,7,8,9,10]
 
+//-------------------------------------------------------------------------------------------------------------------------------------------------
+
+// Write an algorithm that takes an array and moves all of the zeros to the end, preserving the order of the other elements.
+
+var arr1 = [ 1,2,0,23,0,55,0,22,3 ]
+var newArr = [] 
+
+function pushZero( arr ) {
+    arr.map((elm, ind) => {
+    if ( elm !== 0 ) {
+      newArr.push( elm )
+    }
+  })
+  var arrWithZero = arr.filter((elm) => elm === 0)
+  for ( let i = 0; i < arrWithZero.length; i++ ) {
+    newArr.push( 0 )
+  }
+  return newArr
+}
+pushZero(arr1)
