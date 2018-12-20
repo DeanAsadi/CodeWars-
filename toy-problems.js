@@ -689,3 +689,17 @@ function pushZero( arr ) {
   return newArr
 }
 pushZero(arr1)
+//-------------------------------------------------------------------------------------------------------------------------------------------------
+
+// checkPalindrom
+
+var str = "mom"
+function checkPalindrom(str) {
+     newStr = str.split('').reverse().join('');
+    if( newStr === str ) {
+      return true
+    } else {
+      return false
+    }
+}
+checkPalindrom(str)
