@@ -703,3 +703,10 @@ function checkPalindrom(str) {
     }
 }
 checkPalindrom(str)
+
+//-------------------------------------------------------------------------------------------------------------------------------------------------
+
+// convert string numbers into integer numbers!
+var strNum = "21 34 65 88 8"
+
+var numberArr = strNum.split(" ").map(Number)
