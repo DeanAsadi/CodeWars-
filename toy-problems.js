@@ -733,3 +733,46 @@ function checkValidIP(str) {
 return trueORfalse
 }
 checkValidIP("10.0.0.255")
+
+//-------------------------------------------------------------------------------------------------------------------------------------------------
+
+// Write a program that reads two strings and check if they are anagrams to each other.
+
+var char1 = "firstera"
+var char2 = "firstare"
+
+function checkAnagrams(str1, str2) {
+  var strSplit1 = str1.split("").sort().join("")
+  var strSplit2 = str2.split("").sort().join("")
+
+  if( strSplit1 === strSplit2 && strSplit1.length === strSplit2.length ) {
+    return ` ${true} Both are anagrams `
+  } else {
+   ` ${false} They're not anagrams  `
+  }
+}
+checkAnagrams( char1, char2 )
+
+//-------------------------------------------------------------------------------------------------------------------------------------------------
+var str = "We have large inventory of things in our warehouse falling in" 
+					  + "the category:apperal and the slightly "
+					  + "more in demand category:makeup along with the category:furniture and _."
+
+function findCat(str) {
+ var i = 0;
+ var newStr = ""
+  while(true) {
+    var found = str.indexOf( "category:", i )
+    if(found === -1)  break;
+
+    var start = found + 9
+    var end = str.indexOf(" ", start) // start search at " " at index 72  
+    newStr = str.substring(start, end)
+    console.log(newStr)
+    i = end + 1 
+  }
+}
+ 
+findCat(str)
+
+//-------------------------------------------------------------------------------------------------------------------------------------------------
