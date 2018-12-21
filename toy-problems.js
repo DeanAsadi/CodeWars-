@@ -710,3 +710,26 @@ checkPalindrom(str)
 var strNum = "21 34 65 88 8"
 
 var numberArr = strNum.split(" ").map(Number)
+
+//-------------------------------------------------------------------------------------------------------------------------------------------------
+// Write an algorithm that will identify valid IPv4 addresses in dot-decimal format.
+// IPs should be considered valid if they consist of four octets, with values between 0..255 (included).
+
+function checkValidIP(str) {
+
+  var trueORfalse = true
+  var arr = str.split(".")
+
+  if( arr.length !== 4 ) {
+    trueORfalse = false
+  } 
+
+  arr.forEach((elm) => {
+    if( elm > 255 || elm.match(/\D/g) ) {
+      return trueORfalse = false
+    }
+  })
+
+return trueORfalse
+}
+checkValidIP("10.0.0.255")
