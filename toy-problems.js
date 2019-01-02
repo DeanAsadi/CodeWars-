@@ -803,3 +803,14 @@ function swap(arr, i, j) {
   arr[i] = arr[j];
   arr[j] = temp;
 }
+function bubble(arr) {
+  for (let i = 0; i < arr.length; i++) {
+    for (let j = 0; j < arr.length; j++) {
+      if (arr[j - 1] > arr[j]) {
+        swap(arr, j - 1, j);
+      }
+    }
+  }
+
+  return arr;
+}
