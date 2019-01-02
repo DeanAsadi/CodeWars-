@@ -793,3 +793,4 @@ function difference(arr) {
 
   return diff;
 }
+difference( [ 2, 4, 6, 22, 23 ] )
