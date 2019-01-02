@@ -796,4 +796,10 @@ function difference(arr) {
 difference( [ 2, 4, 6, 22, 23 ] )
 
 //-------------------------------------------------------------------------------------------------------------------------------------------------
-//bubble sort
+//bubble sort: 
+
+function swap(arr, i, j) {
+  let temp = arr[i];
+  arr[i] = arr[j];
+  arr[j] = temp;
+}
