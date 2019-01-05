@@ -831,10 +831,10 @@ function list(names) {
   let res = names.reduce((acc, curr, index, arr) => {
     
     if (index === 0) {
-      console.log(curr.name)
+      
       return curr.name;
     } else if (index === arr.length - 1) {
-      console.log(  )
+      
       return acc + " & " + curr.name;
     } else {
       return acc + ", " + curr.name;
