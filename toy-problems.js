@@ -823,5 +823,25 @@ function bubble(arr) {
 
 // Example:
 
+// list([ {name: 'Bart'}, {name: 'Lisa'}, {name: 'Maggie'} ])
+//  returns 'Bart, Lisa & Maggie'
+
+function list(names) {
+  //your code here
+  let res = names.reduce((acc, curr, index, arr) => {
+    
+    if (index === 0) {
+      console.log(curr.name)
+      return curr.name;
+    } else if (index === arr.length - 1) {
+      console.log(  )
+      return acc + " & " + curr.name;
+    } else {
+      return acc + ", " + curr.name;
+    }
+  }, "");
+
+  return res;
+}
+
 list([ {name: 'Bart'}, {name: 'Lisa'}, {name: 'Maggie'} ])
- returns 'Bart, Lisa & Maggie'
