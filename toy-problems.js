@@ -909,7 +909,7 @@ function findMissing(arr) {
 // For example, if given the input 'stress', the function should return 't', since the letter t only occurs once in the string, and occurs first in the string.
 
 function nonRepeat(str) {
-  let orgArr = s.split('');
+  let orgArr = str.split('');
   let arr = str.toLowerCase().split('');
 
   let newArr = [];
