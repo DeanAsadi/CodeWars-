@@ -990,3 +990,8 @@ function rowSumOddNumbers(n) {
   }
   return sum;
 }
+
+/* 
+//-------------------------------------------------------------------------------------------------------------------------------------------------
+Given a string str, reverse it omitting all non-alphabetic characters.
+*/
