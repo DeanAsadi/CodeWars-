@@ -922,7 +922,7 @@ function nonRepeat(str) {
   return '';
 }
 
-
+//-------------------------------------------------------------------------------------------------------------------------------------------------
 // An Arithmetic Progression is defined as one in which there is a constant difference between the consecutive terms of a given series of numbers.
 //  You are provided with consecutive elements of an Arithmetic Progression. 
 //  There is however one hitch: exactly one term from the original series is missing from the set of numbers which have been given to you. 
@@ -962,7 +962,7 @@ function findMissing(arr) {
 
 }
 
-
+//-------------------------------------------------------------------------------------------------------------------------------------------------
 /*Given the triangle of consecutive odd numbers:
 rowSumOddNumbers(1); // 1
 rowSumOddNumbers(2); // 3 + 5 = 8
