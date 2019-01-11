@@ -995,3 +995,7 @@ function rowSumOddNumbers(n) {
 //-------------------------------------------------------------------------------------------------------------------------------------------------
 Given a string str, reverse it omitting all non-alphabetic characters.
 */
+
+function reverseLetter(str) {
+  return str.match(/[a-zA-Z]/gm).reverse().join('')
+}
