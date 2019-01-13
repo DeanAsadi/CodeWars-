@@ -915,3 +915,34 @@ Test.assertEquals(doneOrNot([[5, 3, 4, 6, 7, 8, 9, 1, 2],
   [2, 8, 7, 4, 1, 9, 6, 3, 5],
   [3, 4, 5, 2, 8, 6, 1, 7, 9]]), "Finished!");
 */
+
+function doneOrNot(board) {
+  for (let i = 0; i < board.length; i++) {
+    if (!checkDuplicates(board[i])) {
+      return "Try again!";
+    }
+  }
+  let newArr = [];
+  let arrz = [];
+  for (let i = 0; i < board.length; i++) {
+    for (let j = 0; j < board[i].length; j++) {
+      newArr.push(board[j][i]);
+    }
+    if (!checkDuplicates(newArr)) {
+      return "Try again!";
+    }
+    newArr = [];
+  }
+  for (let i = 0; i < 3; i++) {
+    for (let j = 0; j < 3; j++) {
+      newArr.push(board[j][i]);
+    }
+    arrz = [...arrz, ...newArr];
+    newArr = [];
+  }
+  if (!checkDuplicates(arrz)) {
+    return "Try again!";
+  }
+
+  return "Finished!";
+}
