@@ -946,3 +946,15 @@ function doneOrNot(board) {
 
   return "Finished!";
 }
+
+
+function checkDuplicates(arr) {
+  let newArr = [];
+
+  for (let i = 0; i < arr.length; i++) {
+    if (!newArr.includes(arr[i])) {
+      newArr.push(arr[i]);
+    }
+  }
+  return arr.length === newArr.length;
+}
